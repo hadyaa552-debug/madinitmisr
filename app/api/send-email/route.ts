@@ -9,9 +9,9 @@ export async function POST(request: Request) {
     const { name, email, phone, message } = body
 
     const { data, error } = await resend.emails.send({
-      from: "Hady - Tatweer Misr Galala <onboarding@resend.dev>",
+      from: "Hydepark <onboarding@resend.dev>",
       to: ["saadh6640@gmail.com"],
-      subject: `Hady - Tatweer Misr Galala - استفسار جديد من ${name}`,
+      subject: `hydepark - استفسار جديد من ${name}`,
       html: `
         <!DOCTYPE html>
         <html dir="rtl" lang="ar">
@@ -77,7 +77,7 @@ export async function POST(request: Request) {
             <div class="container">
               <div class="header">
                 <h1>استفسار عقاري جديد</h1>
-                <p style="margin: 10px 0 0 0; opacity: 0.9;">من موقع تطوير مصر الإلكتروني</p>
+                <p style="margin: 10px 0 0 0; opacity: 0.9;">من موقع هايد بارك</p>
               </div>
               <div class="content">
                 <div class="field">
@@ -110,7 +110,7 @@ export async function POST(request: Request) {
                 }
               </div>
               <div class="footer">
-                <p>هذه الرسالة تم إرسالها من نموذج الاتصال في موقع تطوير مصر للتطوير العقاري</p>
+                <p>هذه الرسالة تم إرسالها من نموذج الاتصال في موقع هايد بارك</p>
               </div>
             </div>
           </body>

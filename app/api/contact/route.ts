@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
     const { name, email, phone, message } = body
 
     const { data, error } = await resend.emails.send({
-      from: "Hady - Tatweer Misr Galala <onboarding@resend.dev>",
+      from: "Hydepark <onboarding@resend.dev>",
       to: "saadh6640@gmail.com",
       replyTo: email || undefined,
       subject: `Hady - Tatweer Misr Galala - استفسار جديد من ${name}`,
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
           </div>
           
           <p style="color: #666; font-size: 12px;">
-            تم الإرسال من موقع تطوير مصر للتطوير العقاري
+            تم الإرسال من موقع هايد بارك  للتطوير العقاري
           </p>
         </div>
       `,
